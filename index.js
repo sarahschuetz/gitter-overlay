@@ -5,6 +5,8 @@ const addOverlaySection = () => {
   const section = document.createElement('div');
   section.id = 'gitterOverlay';
   section.classList.add('section');
+  section.classList.add('flex');
+  section.classList.add('hidden');
   body.insertBefore(section, body.firstChild);
 
   return section;
@@ -71,6 +73,18 @@ const addCols = (parent, config) => {
   }
 };
 
+const addGridToggle = (section) => {
+  const body = document.querySelector('body');
+  const toggle = document.createElement('div');
+  toggle.id = 'gitterToggle';
+  toggle.innerText = 'Gitter';
+  body.insertBefore(toggle, body.firstChild);
+
+  toggle.addEventListener('click', () => {
+    section.classList.toggle('hidden');
+  });
+};
+
 const gridOverlay = (customConfig) => {
   const section = addOverlaySection();
 
@@ -80,6 +94,7 @@ const gridOverlay = (customConfig) => {
   };
 
   addCols(section, config);
+  addGridToggle(section);
 };
 
 export default gridOverlay;

@@ -1,0 +1,39 @@
+#gitterOverlay {
+    position: fixed;
+    height: 100vh;
+    top: 0;
+    left: 50%;
+    display: flex;
+    transform: translateX(-50%);
+    pointer-events: none;
+    z-index: 100000;
+}
+
+.gitterCol {
+    height: 100vh;
+    border-right: red solid 1px;
+    position: relative;
+}
+
+.gitterCol:first-child {
+    border-left:  solid 1px;
+}
+
+.gitterCol:before,
+.gitterCol:after {
+    content: '';
+    width: 1rem;
+    height: 100vh;
+    background-color: #f00;
+    opacity: 0.1;
+    position: absolute;
+    top: 0;
+}
+
+.gitterCol:before {
+    left: 0;
+}
+
+.gitterCol:after {
+    right: 0;
+}

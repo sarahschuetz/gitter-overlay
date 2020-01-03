@@ -1,6 +1,6 @@
 {
   "name": "gitter-overlay",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Gitter Overlay",
   "main": "index.js",
   "scripts": {

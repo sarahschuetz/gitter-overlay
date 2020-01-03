@@ -1,0 +1,31 @@
+{
+  "name": "gitter-overlay",
+  "version": "1.0.0",
+  "description": "Gitter Overlay",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sarahschuetz/gitter-overlay.git"
+  },
+  "keywords": [
+    "grid",
+    "tailwind",
+    "gitter"
+  ],
+  "author": "Sarah Schütz",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/sarahschuetz/gitter-overlay/issues"
+  },
+  "homepage": "https://github.com/sarahschuetz/gitter-overlay#readme",
+  "dependencies": {
+    "postcss": "^7.0.26"
+  },
+  "devDependencies": {
+    "eslint": "^6.8.0",
+    "eslint-plugin-import": "^2.19.1"
+  }
+}
